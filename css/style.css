@@ -147,6 +147,10 @@ body {
     padding: 8% 10%;
   }
 
+  .grid-box-head span img {
+    width: 35%;
+  }
+
   .grid-box-content {
     text-align: center;
   }
