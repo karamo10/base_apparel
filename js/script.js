@@ -2,7 +2,8 @@
 const btnSubmit = document.querySelector(".submit");
 
 btnSubmit.addEventListener("click", function() {
-        const input = document.querySelector(".input").value;
+        const inputElement = document.querySelector(".input");
+        const input = inputElement.value;
         const error = document.querySelector(".error");
         const icon = document.querySelector(".icon");
 
@@ -11,7 +12,8 @@ btnSubmit.addEventListener("click", function() {
             icon.style.display = "block";
         }
         else{
-            error.textContent = "Login Successful";
+            error.textContent = "Thanks for subscribing!";
             icon.style.display = "none";
+            inputElement.value = "";
         }
 })
